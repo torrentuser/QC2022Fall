@@ -1,4 +1,5 @@
-\documentclass[a4paper]{book}
+% change document class to ctexbook for Chinese support
+\documentclass[a4paper]{ctexbook}
 % \usepackage[
 %     textwidth=\textwidth,
 %     textheight=\textheight,
@@ -12,10 +13,13 @@
 \let\kaishu\relax
 \newCJKfontfamily\fangsong{simfang.ttf}[BoldFont=simhei.ttf]
 \newCJKfontfamily\kaishu{FZXKTK.TTF}[BoldFont=simhei.ttf]
-\setCJKmainfont{FZXSSK.TTF}[BoldFont=simhei.ttf, ItalicFont=FZXKTK.TTF]
+\setCJKmainfont{FZSSK.TTF}[BoldFont=simhei.ttf, ItalicFont=FZXKTK.TTF]
 % \usepackage[no-math]{fontspec}
 % \setmainfont{Times New Roman}
-\setCJKsansfont{SourceHanSansCN-Regular.otf}[BoldFont=SourceHanSansCN-Bold.otf]
+
+% FIXME: cannot find Source Han Sans even if it has been installed
+% \setCJKsansfont{SourceHanSansCN-Regular.otf}[BoldFont=SourceHanSansCN-Bold.otf]
+
 \raggedbottom % do not fill whole page
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
